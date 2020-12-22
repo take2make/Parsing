@@ -2,9 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import numpy as np
 import air
+
+
 "sudo apt-get install chromium-chromedriver"
 DRIVER_PATH = "/usr/lib/chromium-browser/chromedriver"
-
 
 def save_html(data, file='page.html'):
 	with open(file, 'w') as file:
@@ -23,7 +24,7 @@ def get_html(driver, url):
 	#save_html(response)
 	return response
 
-if __name__=="__main__":
+def main():
 	options = Options()
 	options.headless = True
 
